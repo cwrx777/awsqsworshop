@@ -30,3 +30,4 @@ site/
 *.zipt
 
 .taskcat/
+screen-logs.txt
