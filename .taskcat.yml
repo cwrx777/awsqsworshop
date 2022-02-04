@@ -15,5 +15,5 @@ tests:
       QSS3BucketRegion: "$[taskcat_current_region]"
       QSS3BucketName: "$[taskcat_autobucket]"
       EmailAddress: email@yourdomain.com
-      KeyPairName: "YOUR-KEY-PAIR"
+      KeyPairName: "IN-PROJECT-TASKCAT-YML"
 
