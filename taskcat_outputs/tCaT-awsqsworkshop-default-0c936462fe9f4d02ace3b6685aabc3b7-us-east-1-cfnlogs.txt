@@ -1,0 +1,21 @@
+-----------------------------------------------------------------------------
+Region: us-east-1
+StackName: tCaT-awsqsworkshop-default-0c936462fe9f4d02ace3b6685aabc3b7
+*****************************************************************************
+ResourceStatusReason:  
+The following resource(s) failed to create: [VPCStack].
+*****************************************************************************
+*****************************************************************************
+Events:  
+TimeStamp                         ResourceStatus      ResourceType                LogicalResourceId                                            ResourceStatusReason
+--------------------------------  ------------------  --------------------------  -----------------------------------------------------------  ---------------------------------------------------------------------------------------------
+2022-02-04 07:08:20.641000+00:00  CREATE_FAILED       AWS::CloudFormation::Stack  tCaT-awsqsworkshop-default-0c936462fe9f4d02ace3b6685aabc3b7  The following resource(s) failed to create: [VPCStack].
+2022-02-04 07:08:19.500000+00:00  CREATE_FAILED       AWS::CloudFormation::Stack  VPCStack                                                     S3 error: Access Denied
+                                                                                                                                               For more information check http://docs.aws.amazon.com/AmazonS3/latest/API/ErrorResponses.html
+2022-02-04 07:08:18.869000+00:00  CREATE_IN_PROGRESS  AWS::CloudFormation::Stack  VPCStack
+2022-02-04 07:08:13.339000+00:00  CREATE_IN_PROGRESS  AWS::CloudFormation::Stack  tCaT-awsqsworkshop-default-0c936462fe9f4d02ace3b6685aabc3b7  User Initiated
+*****************************************************************************
+-----------------------------------------------------------------------------
+Tested on: Friday, 04. February 2022 07:09AM
+-----------------------------------------------------------------------------
+

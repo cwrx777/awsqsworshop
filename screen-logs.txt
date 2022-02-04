@@ -1,0 +1,143 @@
+ _            _             _   
+| |_ __ _ ___| | _____ __ _| |_ 
+| __/ _` / __| |/ / __/ _` | __|
+| || (_| \__ \   < (_| (_| | |_ 
+ \__\__,_|___/_|\_\___\__,_|\__|
+                                
+
+
+version 0.9.30
+Not in terminal, reprint now using normal build-in print function.
+
+[WARN   ] : ---
+[WARN   ] : Linting detected issues in: /home/ec2-user/environment/awsqsworshop/templates/master.template.yaml
+[WARN   ] :     line 118 [3005] [Check obsolete DependsOn configuration for Resources] Obsolete DependsOn on resource (VPCStack),
+                                                                             dependency already enforced by a "Fn:GetAtt" at Reso
+                                                                             urces/WorkloadStack/Properties/Parameters/PrivateSub
+                                                                             net1ID/Fn::GetAtt
+[WARN   ] :     line 118 [3005] [Check obsolete DependsOn configuration for Resources] Obsolete DependsOn on resource (VPCStack),
+                                                                             dependency already enforced by a "Fn:GetAtt" at Reso
+                                                                             urces/WorkloadStack/Properties/Parameters/PrivateSub
+                                                                             net2ID/Fn::GetAtt
+[WARN   ] :     line 118 [3005] [Check obsolete DependsOn configuration for Resources] Obsolete DependsOn on resource (VPCStack),
+                                                                             dependency already enforced by a "Fn:GetAtt" at Reso
+                                                                             urces/WorkloadStack/Properties/Parameters/PublicSubn
+                                                                             et1ID/Fn::GetAtt
+[WARN   ] :     line 118 [3005] [Check obsolete DependsOn configuration for Resources] Obsolete DependsOn on resource (VPCStack),
+                                                                             dependency already enforced by a "Fn:GetAtt" at Reso
+                                                                             urces/WorkloadStack/Properties/Parameters/PublicSubn
+                                                                             et2ID/Fn::GetAtt
+[WARN   ] :     line 118 [3005] [Check obsolete DependsOn configuration for Resources] Obsolete DependsOn on resource (VPCStack),
+                                                                             dependency already enforced by a "Fn:GetAtt" at Reso
+                                                                             urces/WorkloadStack/Properties/Parameters/VPCID/Fn::
+                                                                             GetAtt
+[WARN   ] :     line 118 [3005] [Check obsolete DependsOn configuration for Resources] Obsolete DependsOn on resource (VPCStack),
+                                                                             dependency already enforced by a "Fn:GetAtt" at Reso
+                                                                             urces/WorkloadStack/Properties/Parameters/VPCCIDR/Fn
+                                                                             ::GetAtt
+[WARN   ] : ---
+[WARN   ] : Linting detected issues in: /home/ec2-user/environment/awsqsworshop/templates/workload.template.yaml
+[WARN   ] :     line 71 [2001] [Check if Parameters are Used] Parameter PrivateSubnet1ID not used.
+[WARN   ] :     line 74 [2001] [Check if Parameters are Used] Parameter PrivateSubnet2ID not used.
+[WARN   ] :     line 86 [2001] [Check if Parameters are Used] Parameter VPCCIDR not used.
+buckets {'default': {'us-west-1': S3BucketObj(name='tcat-awsqsworkshop-umt83fd3', region='us-east-1', account_id='338947307085', partition='aws', s3_client=<botocore.client.S3 object at 0x7f3e2583df10>, sigv4=True, auto_generated=True, regional_buckets=None, object_acl='private', taskcat_id=UUID('317903f2-9fc3-4588-af70-0c6542519aa5'), org_id=None)}}
+[S3: -> ] s3://tcat-awsqsworkshop-umt83fd3/awsqsworkshop/screen-logs.txt
+[S3: -> ] s3://tcat-awsqsworkshop-umt83fd3/awsqsworkshop/templates/workshop.template.yaml
+[S3: -> ] s3://tcat-awsqsworkshop-umt83fd3/awsqsworkshop/templates/master.template.yaml
+[S3: -> ] s3://tcat-awsqsworkshop-umt83fd3/awsqsworkshop/templates/workload.template.yaml
+[S3: -> ] s3://tcat-awsqsworkshop-umt83fd3/awsqsworkshop/ci/taskcat.yml
+[S3: -> ] s3://tcat-awsqsworkshop-umt83fd3/awsqsworkshop/ci/workshop_input.json
+[S3: -> ] s3://tcat-awsqsworkshop-umt83fd3/awsqsworkshop/submodules/quickstart-aws-vpc/LICENSE.txt
+[S3: -> ] s3://tcat-awsqsworkshop-umt83fd3/awsqsworkshop/submodules/quickstart-aws-vpc/NOTICE.txt
+[S3: -> ] s3://tcat-awsqsworkshop-umt83fd3/awsqsworkshop/submodules/quickstart-aws-vpc/.github/workflows/master-docs-build.yml
+[S3: -> ] s3://tcat-awsqsworkshop-umt83fd3/awsqsworkshop/submodules/quickstart-aws-vpc/ci/aws-vpc-3az-complete.json
+[S3: -> ] s3://tcat-awsqsworkshop-umt83fd3/awsqsworkshop/submodules/quickstart-aws-vpc/ci/aws-vpc-3az-public.json
+[S3: -> ] s3://tcat-awsqsworkshop-umt83fd3/awsqsworkshop/submodules/quickstart-aws-vpc/ci/aws-vpc-3az.json
+[S3: -> ] s3://tcat-awsqsworkshop-umt83fd3/awsqsworkshop/submodules/quickstart-aws-vpc/ci/aws-vpc-4az-complete.json
+[S3: -> ] s3://tcat-awsqsworkshop-umt83fd3/awsqsworkshop/submodules/quickstart-aws-vpc/ci/aws-vpc-4az-public.json
+[S3: -> ] s3://tcat-awsqsworkshop-umt83fd3/awsqsworkshop/submodules/quickstart-aws-vpc/ci/aws-vpc-4az.json
+[S3: -> ] s3://tcat-awsqsworkshop-umt83fd3/awsqsworkshop/submodules/quickstart-aws-vpc/ci/aws-vpc-complete.json
+[S3: -> ] s3://tcat-awsqsworkshop-umt83fd3/awsqsworkshop/submodules/quickstart-aws-vpc/ci/aws-vpc-dedicated.json
+[S3: -> ] s3://tcat-awsqsworkshop-umt83fd3/awsqsworkshop/submodules/quickstart-aws-vpc/ci/aws-vpc-defaults.json
+[S3: -> ] s3://tcat-awsqsworkshop-umt83fd3/awsqsworkshop/submodules/quickstart-aws-vpc/ci/aws-vpc-public.json
+[S3: -> ] s3://tcat-awsqsworkshop-umt83fd3/awsqsworkshop/submodules/quickstart-aws-vpc/ci/aws-vpc-sa-east-1.json
+[S3: -> ] s3://tcat-awsqsworkshop-umt83fd3/awsqsworkshop/submodules/quickstart-aws-vpc/ci/taskcat.yml
+[S3: -> ] s3://tcat-awsqsworkshop-umt83fd3/awsqsworkshop/submodules/quickstart-aws-vpc/docs/generated/parameters/index.adoc
+[S3: -> ] s3://tcat-awsqsworkshop-umt83fd3/awsqsworkshop/submodules/quickstart-aws-vpc/docs/generated/regions/index.adoc
+[S3: -> ] s3://tcat-awsqsworkshop-umt83fd3/awsqsworkshop/submodules/quickstart-aws-vpc/docs/generated/services/index.adoc
+[S3: -> ] s3://tcat-awsqsworkshop-umt83fd3/awsqsworkshop/submodules/quickstart-aws-vpc/docs/generated/services/metadata.adoc
+[S3: -> ] s3://tcat-awsqsworkshop-umt83fd3/awsqsworkshop/submodules/quickstart-aws-vpc/docs/images/architecture_diagram.png
+[S3: -> ] s3://tcat-awsqsworkshop-umt83fd3/awsqsworkshop/submodules/quickstart-aws-vpc/docs/images/aws-quickstart-graphic.png
+[S3: -> ] s3://tcat-awsqsworkshop-umt83fd3/awsqsworkshop/submodules/quickstart-aws-vpc/docs/images/cfn_outputs.png
+[S3: -> ] s3://tcat-awsqsworkshop-umt83fd3/awsqsworkshop/submodules/quickstart-aws-vpc/docs/partner_editable/_settings.adoc
+[S3: -> ] s3://tcat-awsqsworkshop-umt83fd3/awsqsworkshop/submodules/quickstart-aws-vpc/docs/partner_editable/additional_info.adoc
+[S3: -> ] s3://tcat-awsqsworkshop-umt83fd3/awsqsworkshop/submodules/quickstart-aws-vpc/docs/partner_editable/architecture.adoc
+[S3: -> ] s3://tcat-awsqsworkshop-umt83fd3/awsqsworkshop/submodules/quickstart-aws-vpc/docs/partner_editable/deploy_steps.adoc
+[S3: -> ] s3://tcat-awsqsworkshop-umt83fd3/awsqsworkshop/submodules/quickstart-aws-vpc/docs/partner_editable/deployment_options.adoc
+[S3: -> ] s3://tcat-awsqsworkshop-umt83fd3/awsqsworkshop/submodules/quickstart-aws-vpc/docs/partner_editable/faq_troubleshooting.adoc
+[S3: -> ] s3://tcat-awsqsworkshop-umt83fd3/awsqsworkshop/submodules/quickstart-aws-vpc/docs/partner_editable/licenses.adoc
+[S3: -> ] s3://tcat-awsqsworkshop-umt83fd3/awsqsworkshop/submodules/quickstart-aws-vpc/docs/partner_editable/overview_target_and_usage.adoc
+[S3: -> ] s3://tcat-awsqsworkshop-umt83fd3/awsqsworkshop/submodules/quickstart-aws-vpc/docs/partner_editable/pre-reqs.adoc
+[S3: -> ] s3://tcat-awsqsworkshop-umt83fd3/awsqsworkshop/submodules/quickstart-aws-vpc/docs/partner_editable/product_description.adoc
+[S3: -> ] s3://tcat-awsqsworkshop-umt83fd3/awsqsworkshop/submodules/quickstart-aws-vpc/docs/partner_editable/regions.adoc
+[S3: -> ] s3://tcat-awsqsworkshop-umt83fd3/awsqsworkshop/submodules/quickstart-aws-vpc/docs/partner_editable/service_limits.adoc
+[S3: -> ] s3://tcat-awsqsworkshop-umt83fd3/awsqsworkshop/submodules/quickstart-aws-vpc/docs/partner_editable/specialized_knowledge.adoc
+[S3: -> ] s3://tcat-awsqsworkshop-umt83fd3/awsqsworkshop/submodules/quickstart-aws-vpc/templates/aws-vpc.template
+[S3: -> ] s3://tcat-awsqsworkshop-umt83fd3/awsqsworkshop/submodules/quickstart-aws-vpc/templates/aws-vpc.template.yaml
+         ┏ stack Ⓜ tCaT-awsqsworkshop-default-317903f29fc34588af700c6542519aa5
+         ┣ region: us-west-1
+         ┗ status: CREATE_IN_PROGRESS
+         ┏ stack Ⓜ tCaT-awsqsworkshop-default-317903f29fc34588af700c6542519aa5
+         ┣ region: us-west-1
+         ┗ status: CREATE_IN_PROGRESS
+         ┏ stack Ⓜ tCaT-awsqsworkshop-default-317903f29fc34588af700c6542519aa5
+         ┣ region: us-west-1
+         ┗ status: CREATE_IN_PROGRESS
+         ┏ stack Ⓜ tCaT-awsqsworkshop-default-317903f29fc34588af700c6542519aa5
+         ┣ region: us-west-1
+         ┗ status: CREATE_IN_PROGRESS
+         ┏ stack Ⓜ tCaT-awsqsworkshop-default-317903f29fc34588af700c6542519aa5
+         ┣ region: us-west-1
+         ┗ status: CREATE_IN_PROGRESS
+         ┏ stack Ⓜ tCaT-awsqsworkshop-default-317903f29fc34588af700c6542519aa5
+         ┣ region: us-west-1
+         ┗ status: CREATE_IN_PROGRESS
+[INFO   ] : ┏ stack Ⓜ tCaT-awsqsworkshop-default-317903f29fc34588af700c6542519aa5
+[INFO   ] : ┣ region: us-west-1
+[INFO   ] : ┗ status: CREATE_FAILED 
+[INFO   ] : Reporting on arn:aws:cloudformation:us-west-1:338947307085:stack/tCaT-awsqsworkshop-default-317903f29fc34588af700c6542519aa5/6c2165d0-8587-11ec-8923-02939e6829a3
+[INFO   ] : Deleting stack: arn:aws:cloudformation:us-west-1:338947307085:stack/tCaT-awsqsworkshop-default-317903f29fc34588af700c6542519aa5/6c2165d0-8587-11ec-8923-02939e6829a3
+         ┏ stack Ⓜ tCaT-awsqsworkshop-default-317903f29fc34588af700c6542519aa5
+         ┣ region: us-west-1
+         ┗ status: DELETE_IN_PROGRESS
+         ┏ stack Ⓜ tCaT-awsqsworkshop-default-317903f29fc34588af700c6542519aa5
+         ┣ region: us-west-1
+         ┗ status: DELETE_IN_PROGRESS
+         ┏ stack Ⓜ tCaT-awsqsworkshop-default-317903f29fc34588af700c6542519aa5
+         ┣ region: us-west-1
+         ┗ status: DELETE_IN_PROGRESS
+         ┏ stack Ⓜ tCaT-awsqsworkshop-default-317903f29fc34588af700c6542519aa5
+         ┣ region: us-west-1
+         ┗ status: DELETE_IN_PROGRESS
+         ┏ stack Ⓜ tCaT-awsqsworkshop-default-317903f29fc34588af700c6542519aa5
+         ┣ region: us-west-1
+         ┗ status: DELETE_IN_PROGRESS
+         ┏ stack Ⓜ tCaT-awsqsworkshop-default-317903f29fc34588af700c6542519aa5
+         ┣ region: us-west-1
+         ┗ status: DELETE_IN_PROGRESS
+[INFO   ] : ┏ stack Ⓜ tCaT-awsqsworkshop-default-317903f29fc34588af700c6542519aa5
+[INFO   ] : ┣ region: us-west-1
+[INFO   ] : ┗ status: OUT_OF_ORDER_EVENT 
+[ERROR  ] : One or more stacks failed to create: {'arn:aws:cloudformation:us-west-1:338947307085:stack/tCaT-awsqsworkshop-default-317903f29fc34588af700c6542519aa5/6c2165d0-8587-11ec-8923-02939e6829a3': 'COMPLETE event not detected. Potential out-of-band action against the stack.'}
+Traceback (most recent call last):
+  File "/home/ec2-user/environment/vpy37/lib/python3.7/site-packages/taskcat/_cli.py", line 46, in main
+    cli.run()
+  File "/home/ec2-user/environment/vpy37/lib/python3.7/site-packages/taskcat/_cli_core.py", line 314, in run
+    return getattr(command(), subcommand)(**args)
+  File "/home/ec2-user/environment/vpy37/lib/python3.7/site-packages/taskcat/_cli_modules/test.py", line 168, in run
+    test.report(output_directory)
+  File "/home/ec2-user/environment/vpy37/lib/python3.7/site-packages/taskcat/testing/base_test.py", line 64, in __exit__
+    self.clean_up()
+  File "/home/ec2-user/environment/vpy37/lib/python3.7/site-packages/taskcat/testing/_cfn_test.py", line 180, in clean_up
+    f'One or more stacks failed to create: {status["FAILED"]}'
+taskcat.exceptions.TaskCatException: One or more stacks failed to create: {'arn:aws:cloudformation:us-west-1:338947307085:stack/tCaT-awsqsworkshop-default-317903f29fc34588af700c6542519aa5/6c2165d0-8587-11ec-8923-02939e6829a3': 'COMPLETE event not detected. Potential out-of-band action against the stack.'}
