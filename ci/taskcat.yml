@@ -12,7 +12,7 @@ global:
   reporting: true
 tests:
   lab-master-vpc:
-    parameter_input: workshop_input.json 
-    template_file: master.template.yaml
+    parameter_input: workshop_input_test.json 
+    template_file: master_test.template.yaml
     regions:
       - us-east-1
