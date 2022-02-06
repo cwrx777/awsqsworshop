@@ -1,0 +1,19 @@
+project:
+  name: awsqsworkshop
+  regions:
+    - ap-southeast-1
+    - ap-southeast-2
+tests:
+  default:
+    template: ./templates/master.template.yaml
+    regions:
+      - us-east-1    
+    parameters:
+      AvailabilityZones: "$[taskcat_getaz_2]"
+      WebserverCIDR: "0.0.0.0/0"
+      QSS3KeyPrefix: "awsqsworkshop/"
+      QSS3BucketRegion: "$[taskcat_current_region]"
+      QSS3BucketName: "charlywrx-temp" #$[taskcat_autobucket]" #how to pass this when run in CodeBuild?
+      EmailAddress: email@yourdomain.com
+      KeyPairName: "qsworkshop" #"IN-PROJECT-TASKCAT-YML"  #how to pass this when run in CodeBuild?
+
